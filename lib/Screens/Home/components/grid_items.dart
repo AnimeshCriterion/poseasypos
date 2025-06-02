@@ -14,31 +14,31 @@ List<GridItems> getFreeIcons({required BuildContext context}) {
       icon: 'assets/sales.svg',
       route: 'Sales',
     ),
-    GridItems(
-      title: lang.S.of(context).parties,
-      icon: 'assets/parties.svg',
-      route: 'Parties',
-    ),
-    GridItems(
-      title: lang.S.of(context).purchase,
-      icon: 'assets/purchase.svg',
-      route: 'Purchase',
-    ),
-    GridItems(
-      title: lang.S.of(context).product,
-      icon: 'assets/products.svg',
-      route: 'Products',
-    ),
-    GridItems(
-      title: lang.S.of(context).dueList,
-      icon: 'assets/duelist.svg',
-      route: 'Due List',
-    ),
-    GridItems(
-      title: lang.S.of(context).stockList,
-      icon: 'assets/stock.svg',
-      route: 'Stock',
-    ),
+    // GridItems(
+    //   title: lang.S.of(context).parties,
+    //   icon: 'assets/parties.svg',
+    //   route: 'Parties',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).purchase,
+    //   icon: 'assets/purchase.svg',
+    //   route: 'Purchase',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).product,
+    //   icon: 'assets/products.svg',
+    //   route: 'Products',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).dueList,
+    //   icon: 'assets/duelist.svg',
+    //   route: 'Due List',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).stockList,
+    //   icon: 'assets/stock.svg',
+    //   route: 'Stock',
+    // ),
     GridItems(
       title: lang.S.of(context).reports,
       icon: 'assets/reports.svg',
@@ -49,36 +49,36 @@ List<GridItems> getFreeIcons({required BuildContext context}) {
       icon: 'assets/salelist.svg',
       route: 'Sales List',
     ),
-    GridItems(
-      title: lang.S.of(context).purchaseList,
-      icon: 'assets/purchaseLisst.svg',
-      route: 'Purchase List',
-    ),
-    GridItems(
-      title: lang.S.of(context).lossOrProfit,
-      icon: 'assets/lossprofit.svg',
-      route: 'Loss/Profit',
-    ),
-    GridItems(
-      title: lang.S.of(context).income,
-      icon: 'assets/incomeReport.svg',
-      route: 'Income',
-    ),
-    GridItems(
-      title: lang.S.of(context).expense,
-      icon: 'assets/expense.svg',
-      route: 'Expense',
-    ),
-    GridItems(
-      title: lang.S.of(context).vatAndTax,
-      icon: 'assets/tax.svg',
-      route: 'tax',
-    ),
-    GridItems(
-      title: lang.S.of(context).customPrint,
-      icon: 'assets/printer.svg',
-      route: 'customPrint',
-    ),
+    // GridItems(
+    //   title: lang.S.of(context).purchaseList,
+    //   icon: 'assets/purchaseLisst.svg',
+    //   route: 'Purchase List',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).lossOrProfit,
+    //   icon: 'assets/lossprofit.svg',
+    //   route: 'Loss/Profit',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).income,
+    //   icon: 'assets/incomeReport.svg',
+    //   route: 'Income',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).expense,
+    //   icon: 'assets/expense.svg',
+    //   route: 'Expense',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).vatAndTax,
+    //   icon: 'assets/tax.svg',
+    //   route: 'tax',
+    // ),
+    // GridItems(
+    //   title: lang.S.of(context).customPrint,
+    //   icon: 'assets/printer.svg',
+    //   route: 'customPrint',
+    // ),
   ];
   return freeIcons;
 }

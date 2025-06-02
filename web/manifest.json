@@ -1,6 +1,6 @@
 {
-    "name": "Easy POS_main",
-    "short_name": "Easy POS_main",
+    "name": "ABI POS_main",
+    "short_name": "ABI POS_main",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

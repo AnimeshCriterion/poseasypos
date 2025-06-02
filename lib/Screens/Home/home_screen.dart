@@ -397,41 +397,41 @@ class _HomeScreenState extends State<HomeScreen> {
                         }),
                       ),
 
-                      const SizedBox(height: 20),
-                      GestureDetector(
-                        onTap: () {
-                          showDialog(
-                              context: context,
-                              builder: (BuildContext context) {
-                                return goToPackagePagePopup(context: context, enrolledPlan: details.enrolledPlan);
-                              });
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: kWhite, boxShadow: [BoxShadow(color: const Color(0xffC52127).withOpacity(0.04), blurRadius: 15, offset: const Offset(0, 10))]),
-                          child: ListTile(
-                            visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
-                            horizontalTitleGap: 20,
-                            contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
-                            leading: SvgPicture.asset(
-                              'assets/plan.svg',
-                              height: 38,
-                              width: 38,
-                            ),
-                            title: RichText(
-                              text: TextSpan(
-                                text: '${details.enrolledPlan?.plan?.subscriptionName ?? 'No Active'} ${lang.S.of(context).package} ',
-                                style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600),
-                              ),
-                            ),
-                            subtitle: Text(getDayLeftInExpiring(expireDate: details.willExpire, shortMSG: false)),
-                            trailing: const Icon(
-                              Icons.arrow_forward_ios,
-                              color: kGreyTextColor,
-                              size: 20,
-                            ),
-                          ),
-                        ),
-                      ),
+                      // const SizedBox(height: 20),
+                      // GestureDetector(
+                      //   onTap: () {
+                      //     showDialog(
+                      //         context: context,
+                      //         builder: (BuildContext context) {
+                      //           return goToPackagePagePopup(context: context, enrolledPlan: details.enrolledPlan);
+                      //         });
+                      //   },
+                      //   child: Container(
+                      //     decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: kWhite, boxShadow: [BoxShadow(color: const Color(0xffC52127).withOpacity(0.04), blurRadius: 15, offset: const Offset(0, 10))]),
+                      //     child: ListTile(
+                      //       visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
+                      //       horizontalTitleGap: 20,
+                      //       contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+                      //       leading: SvgPicture.asset(
+                      //         'assets/plan.svg',
+                      //         height: 38,
+                      //         width: 38,
+                      //       ),
+                      //       title: RichText(
+                      //         text: TextSpan(
+                      //           text: '${details.enrolledPlan?.plan?.subscriptionName ?? 'No Active'} ${lang.S.of(context).package} ',
+                      //           style: theme.textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w600),
+                      //         ),
+                      //       ),
+                      //       subtitle: Text(getDayLeftInExpiring(expireDate: details.willExpire, shortMSG: false)),
+                      //       trailing: const Icon(
+                      //         Icons.arrow_forward_ios,
+                      //         color: kGreyTextColor,
+                      //         size: 20,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
                       const SizedBox(height: 20),
                       GridView.count(
                         physics: const NeverScrollableScrollPhysics(),

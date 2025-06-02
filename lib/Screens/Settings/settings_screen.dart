@@ -149,7 +149,7 @@ class SettingScreenState extends State<SettingScreen> {
                     top: 8,
                   ),
                   child: Text(
-                    'Easy POS V-$appVersion',
+                    'ABI POS V-$appVersion',
                     style: _theme.textTheme.bodyLarge?.copyWith(
                       color: kGreyTextColor,
                     ),
@@ -170,67 +170,67 @@ class SettingScreenState extends State<SettingScreen> {
         svgIconPath: 'assets/profile.svg',
         route: const ProfileDetails(),
       ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).printingInvoice,
-        svgIconPath: 'assets/print.svg',
-        route: PrintingInvoiceScreen(),
-      ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).salesSetting,
-        svgIconPath: 'assets/sales.svg',
-        route: SalesSettingsScreen(),
-      ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).subscription,
-        svgIconPath: 'assets/subscription.svg',
-        route: const PackageScreen(),
-      ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).dashboard,
-        svgIconPath: 'assets/dashboard.svg',
-        route: const DashboardScreen(),
-      ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).userRole,
-        svgIconPath: 'assets/userRole.svg',
-        route: const UserRoleScreen(),
-      ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).currency,
-        svgIconPath: 'assets/currency.svg',
-        route: const CurrencyScreen(),
-        trailing: Text.rich(
-          TextSpan(
-            text: '($currency)  ',
-            children: const [
-              WidgetSpan(
-                alignment: PlaceholderAlignment.middle,
-                child: Icon(
-                  Icons.arrow_forward_ios,
-                  size: 20,
-                  color: kGreyTextColor,
-                ),
-              ),
-            ],
-          ),
-          style: Theme.of(context).textTheme.bodyLarge,
-        ),
-      ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).barcodeGenerator,
-        svgIconPath: 'assets/barcode.svg',
-        route: const BarcodeGeneratorScreen(),
-      ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).printingInvoice,
+      //   svgIconPath: 'assets/print.svg',
+      //   route: PrintingInvoiceScreen(),
+      // ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).salesSetting,
+      //   svgIconPath: 'assets/sales.svg',
+      //   route: SalesSettingsScreen(),
+      // ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).subscription,
+      //   svgIconPath: 'assets/subscription.svg',
+      //   route: const PackageScreen(),
+      // ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).dashboard,
+      //   svgIconPath: 'assets/dashboard.svg',
+      //   route: const DashboardScreen(),
+      // ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).userRole,
+      //   svgIconPath: 'assets/userRole.svg',
+      //   route: const UserRoleScreen(),
+      // ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).currency,
+      //   svgIconPath: 'assets/currency.svg',
+      //   route: const CurrencyScreen(),
+      //   trailing: Text.rich(
+      //     TextSpan(
+      //       text: '($currency)  ',
+      //       children: const [
+      //         WidgetSpan(
+      //           alignment: PlaceholderAlignment.middle,
+      //           child: Icon(
+      //             Icons.arrow_forward_ios,
+      //             size: 20,
+      //             color: kGreyTextColor,
+      //           ),
+      //         ),
+      //       ],
+      //     ),
+      //     style: Theme.of(context).textTheme.bodyLarge,
+      //   ),
+      // ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).barcodeGenerator,
+      //   svgIconPath: 'assets/barcode.svg',
+      //   route: const BarcodeGeneratorScreen(),
+      // ),
       PageNavigationNavTile(
         title: lang.S.of(context).selectLang,
         svgIconPath: 'assets/language.svg',
         route: const SelectLanguage(),
       ),
-      PageNavigationNavTile(
-        title: lang.S.of(context).paymentTypes,
-        svgIconPath: 'assets/payment_type.svg',
-        route: const PaymentTypeScreen(),
-      ),
+      // PageNavigationNavTile(
+      //   title: lang.S.of(context).paymentTypes,
+      //   svgIconPath: 'assets/payment_type.svg',
+      //   route: const PaymentTypeScreen(),
+      // ),
       PageNavigationNavTile(
         title: lang.S.of(context).logOut,
         svgIconPath: 'assets/logout.svg',

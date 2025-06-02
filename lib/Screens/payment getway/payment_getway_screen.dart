@@ -18,7 +18,7 @@ class PaymentScreen extends StatefulWidget {
   PaymentScreenState createState() => PaymentScreenState();
 }
 
-String paymentUrl = 'https://Easy POS.acnoo.com/payments-gateways/plan_id/business_id?platform=app';
+String paymentUrl = 'https://ABI POS.acnoo.com/payments-gateways/plan_id/business_id?platform=app';
 const String successUrl = 'order-status?status=success';
 const String failureUrl = 'order-status?status=failed';
 
@@ -30,7 +30,7 @@ class PaymentScreenState extends State<PaymentScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    paymentUrl = paymentUrl.replaceAll('https://Easy POS.acnoo.com/', APIConfig.domain).replaceAll('plan_id', widget.planId).replaceAll('business_id', widget.businessId);
+    paymentUrl = paymentUrl.replaceAll('https://ABI POS.acnoo.com/', APIConfig.domain).replaceAll('plan_id', widget.planId).replaceAll('business_id', widget.businessId);
 
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)

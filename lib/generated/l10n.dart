@@ -1,7 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import 'intl/messages_all.dart';
 
 // **************************************************************************
@@ -29,7 +28,10 @@ class S {
   static const AppLocalizationDelegate delegate = AppLocalizationDelegate();
 
   static Future<S> load(Locale locale) {
-    final name = (locale.countryCode?.isEmpty ?? false) ? locale.languageCode : locale.toString();
+    final name =
+        (locale.countryCode?.isEmpty ?? false)
+            ? locale.languageCode
+            : locale.toString();
     final localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
@@ -1323,10 +1325,10 @@ class S {
     );
   }
 
-  /// `Easy POS app is free, easy to use. In fact, it's one of the best  POS systems around the world.`
+  /// `ABI POS app is free, easy to use. In fact, it's one of the best  POS systems around the world.`
   String get easytheusedesciption {
     return Intl.message(
-      'Easy POS app is free, easy to use. In fact, it\'s one of the best  POS systems around the world.',
+      'ABI POS app is free, easy to use. In fact, it\'s one of the best  POS systems around the world.',
       name: 'easytheusedesciption',
       desc: '',
       args: [],
@@ -1343,10 +1345,10 @@ class S {
     );
   }
 
-  /// `Features are the important part which makes Easy POS different from traditional solutions.`
+  /// `Features are the important part which makes ABI POS different from traditional solutions.`
   String get choseyourfeatureDesciption {
     return Intl.message(
-      'Features are the important part which makes Easy POS different from traditional solutions.',
+      'Features are the important part which makes ABI POS different from traditional solutions.',
       name: 'choseyourfeatureDesciption',
       desc: '',
       args: [],
@@ -1363,10 +1365,10 @@ class S {
     );
   }
 
-  /// `Easy POS is a complete business solution with stock, account, sales, expense & loss/profit.`
+  /// `ABI POS is a complete business solution with stock, account, sales, expense & loss/profit.`
   String get allBusinessolutionDescrip {
     return Intl.message(
-      'Easy POS is a complete business solution with stock, account, sales, expense & loss/profit.',
+      'ABI POS is a complete business solution with stock, account, sales, expense & loss/profit.',
       name: 'allBusinessolutionDescrip',
       desc: '',
       args: [],
@@ -4775,10 +4777,8 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
 
   @override
   bool isSupported(Locale locale) => _isSupported(locale);
-
   @override
   Future<S> load(Locale locale) => S.load(locale);
-
   @override
   bool shouldReload(AppLocalizationDelegate old) => false;
 

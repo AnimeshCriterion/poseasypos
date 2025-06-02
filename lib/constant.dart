@@ -30,7 +30,7 @@ const String onboard1 = 'images/onbord1.png';
 const String onboard2 = 'images/onbord2.png';
 const String onboard3 = 'images/onbord3.png';
 const String logo = 'images/logo.png';
-const String appsName = 'Easy POS';
+const String appsName = 'ABI POS';
 const String companyWebsite = 'https://acnoo.com';
 const String companyName = 'Apphouse';
 

@@ -85,9 +85,7 @@ class _HomeState extends State<Home> {
               onPageChanged: (v) {
                 tabIndex = v;
               },
-              children: (profile.value?.user?.visibility?.dashboardPermission ?? true)
-                  ? const [HomeScreen(), DashboardScreen(), Reports(), SettingScreen()]
-                  : const [HomeScreen(), Reports(), SettingScreen()],
+              children: const [HomeScreen(), Reports(), SettingScreen()],
             ),
             bottomNavigationBar: BottomNavigationBar(
               currentIndex: _tabIndex,
@@ -115,24 +113,24 @@ class _HomeState extends State<Home> {
                         ),
                   label: lang.S.of(context).home,
                 ),
+                // BottomNavigationBarItem(
+                //   icon: _tabIndex == 1
+                //       ? SvgPicture.asset(
+                //           'assets/dashbord1.svg',
+                //           height: 28,
+                //           width: 28,
+                //           fit: BoxFit.scaleDown,
+                //         )
+                //       : SvgPicture.asset(
+                //           'assets/dashbord.svg',
+                //           height: 24,
+                //           colorFilter: const ColorFilter.mode(kGreyTextColor, BlendMode.srcIn),
+                //           width: 24,
+                //         ),
+                //   label: lang.S.of(context).dashboard,
+                // ),
                 BottomNavigationBarItem(
                   icon: _tabIndex == 1
-                      ? SvgPicture.asset(
-                          'assets/dashbord1.svg',
-                          height: 28,
-                          width: 28,
-                          fit: BoxFit.scaleDown,
-                        )
-                      : SvgPicture.asset(
-                          'assets/dashbord.svg',
-                          height: 24,
-                          colorFilter: const ColorFilter.mode(kGreyTextColor, BlendMode.srcIn),
-                          width: 24,
-                        ),
-                  label: lang.S.of(context).dashboard,
-                ),
-                BottomNavigationBarItem(
-                  icon: _tabIndex == 2
                       ? SvgPicture.asset(
                           'assets/cFile.svg',
                           height: 28,
@@ -148,7 +146,7 @@ class _HomeState extends State<Home> {
                   label: lang.S.of(context).reports,
                 ),
                 BottomNavigationBarItem(
-                  icon: _tabIndex == 3
+                  icon: _tabIndex == 2
                       ? SvgPicture.asset(
                           'assets/cSetting.svg',
                           height: 28,

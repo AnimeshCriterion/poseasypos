@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
                   GlobalCupertinoLocalizations.delegate,
                 ],
                 supportedLocales: S.delegate.supportedLocales,
-                title: 'Easy POS',
+                title: 'ABI POS',
                 initialRoute: '/',
                 builder: EasyLoading.init(),
                 routes: {
